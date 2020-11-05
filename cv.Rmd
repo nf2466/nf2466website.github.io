@@ -1,0 +1,32 @@
+---
+title: "Nancy Fang's CV"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+## Education
+<span class='right' style='color:gray'> Columbia University </span>
+**Fellowship in Complex Family Planning** *Expected May 2021* <br>
+
+<span class='right' style='color:gray'>Mailman School of Public Health</span>
+**MSc** in Epidemiology, *Expected May 2021*  <br>
+
+<span class='right' style='color:gray'>University of Colorado</span>
+**Residency in Obstetrics & Gynecology** May 2019 <br>
+
+<span class='right' style='color:gray'>University of Pittsburgh</span>
+**MD** May 2015 <br>
+
+<span class='right' style='color:gray'> Northwestern University</span>
+**BA** Major: Chemistry, Minor: Global Health May 2009  <br>
+
+## Publications
+
+[**Fang NZ**, Castaño PM, Davis A. A hospital-based COVID-19 abortion case in the early phase of the pandemic. *Contraception.* 2020;S0010-7824(20)30153-0.](https://pubmed.ncbi.nlm.nih.gov/32416144/) <br>
+
+[**Fang NZ**, Guiahi M, Lazorwitz A. Satisfaction with medication abortion and marijuana use: A prospective cohort study. Contraception. 2020;102(1):30-33.](https://pubmed.ncbi.nlm.nih.gov/32278684/)<br>
+
+[**Fang NZ**, Sheeder J, Teal SB. Factors associated with initiating long-acting reversible contraception immediately after first-trimester abortion. Contraception. 2018;98(4):292-295.](https://pubmed.ncbi.nlm.nih.gov/29902476/)<br>
+
+[Reed B, **Fang N**, Mayer-Blackwell B, et al. Chromatin alterations in response to forced swimming underlie increased prodynorphin transcription. Neuroscience. 2012;220:109-118.](https://pubmed.ncbi.nlm.nih.gov/22698692/)<br>

@@ -1,0 +1,14 @@
+name: "Nancy Fang's Website!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About Me"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:nf2466@cumc.columbia.edu
+    - icon: fa-github fa-lg
+      href: https://github.com/nf2466/
+output:
+  html_document:
+    theme: cerulean

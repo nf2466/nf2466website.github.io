@@ -1,0 +1,15 @@
+---
+title: "Nancy Fang's Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Welcome!
+
+![]<img src="data/sam.HEIC" style="width:75%">
+
+# About Me
+
+I am a OBGYN, in the my second year of fellowship in Complex Family Planning. For more information, here is a link to my [CV](cv.html).
