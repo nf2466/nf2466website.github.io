@@ -15,6 +15,8 @@ library(plotly)
 ```{r}
 data("instacart")
 
+
+insta =
 instacart %>%
   select(aisle,department,product_name, order_dow, order_hour_of_day)%>%
   mutate(order_dow=recode(order_dow,
@@ -26,6 +28,7 @@ instacart %>%
        "5"="Friday",
        "6"="Saturday"),
        order_dow=as.factor(order_dow))%>%
+  filter(department %in% c("alcohol", "babies", "frozen", "bulk", "meat seafood", "bakery", "breakfast"))
   
 ```
 
