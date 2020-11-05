@@ -3,10 +3,10 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About Me"
-      href: about.html
+    - text: "CV"
+      href: cv.html
     - icon: fa-envelope fa-lg
-      href: mailto:nf2466@cumc.columbia.edu
+      href: "mailto:nf2466@cumc.columbia.edu"
     - icon: fa-github fa-lg
       href: https://github.com/nf2466/
 output:

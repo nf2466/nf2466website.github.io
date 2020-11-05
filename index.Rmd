@@ -12,4 +12,14 @@ output:
 
 # About Me
 
-I am a OBGYN, in the my second year of fellowship in Complex Family Planning. For more information, here is a link to my [CV](cv.html).
+I am an OBGYN living in NYC with my husband, Dan and dog, Sam (seen above). I am in my second year of fellowship in Complex Family Planning. For more information about my professional career, here is a link to my [CV](cv.html).
+
+# Important Links
+
+[My Github](https://github.com/nf2466/)
+
+[Society of Family Planning](https://www.societyfp.org/) <br>
+
+[Guttmacher Institute](https://www.guttmacher.org/) <br>
+
+[SisterSong](https://www.sistersong.net/) <br>
