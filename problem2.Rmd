@@ -13,23 +13,50 @@ library(plotly)
 ```
 
 ```{r}
-data("instacart")
+data("rest_inspec")
 
 
-insta =
-instacart %>%
-  select(aisle,department,product_name, order_dow, order_hour_of_day)%>%
-  mutate(order_dow=recode(order_dow,
-       "0"="Sunday",
-       "1"="Monday",
-       "2"="Tuesday",
-       "3"="Wednesday",
-       "4"="Thursday",
-       "5"="Friday",
-       "6"="Saturday"),
-       order_dow=as.factor(order_dow))%>%
-  filter(department %in% c("alcohol", "babies", "frozen", "bulk", "meat seafood", "bakery", "breakfast"))
-  
+rest_df=
+  rest_inspec%>%
+  select("boro", "zipcode", "grade", "dba","cuisine_description", "score")%>%
+  drop_na(grade, boro)%>%
+  filter(grade!="Not Yet Graded",
+         boro!="Missing")
+
 ```
+
+
+
+## Boxplot
+
+
+```{r}
+rest_df%>%
+  group_by(cuisine_description)%>%
+  mutate(text.label=str_c("Name: ", dba, "Grade: ", grade))%>%
+  plot_ly(x=~boro, y=~score, color=~cuisine_description, 
+          text=~text.label, type="box", colors='viridis')
+
+
+```
+
+## Bar plot
+
+```{r}
+rest_df%>%
+  group_by(boro)%>%
+  count(grade)%>%
+  plot_ly(x=~grade,y=~n, color=~boro, type="bar", colors='viridis')
+```
+
+## Scatter
+
+```{r}
+rest_df%>%
+  mutate(text.label=str_c("Name: ", dba, "Grade: ", grade))%>%
+  plot_ly(x=~score, y=~cuisine_description, colors='viridis', 
+          text=~text.label, color=~boro, type="scatter", mode="markers")
+```
+
 
 

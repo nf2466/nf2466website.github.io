@@ -1,0 +1,62 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+```{r}
+data("rest_inspec")
+
+
+rest_df=
+  rest_inspec%>%
+  select("boro", "zipcode", "grade", "dba","cuisine_description", "score")%>%
+  drop_na(grade, boro)%>%
+  filter(grade!="Not Yet Graded",
+         boro!="Missing")
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Boxplot
+
+```{r}
+rest_df%>%
+  group_by(cuisine_description)%>%
+  mutate(text.label=str_c("Name: ", dba, "Grade: ", grade))%>%
+  plot_ly(x=~boro, y=~score, color=~cuisine_description, 
+          text=~text.label, type="box", colors='viridis')
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Barplot
+
+```{r}
+rest_df%>%
+  group_by(boro)%>%
+  count(grade)%>%
+  plot_ly(x=~grade,y=~n, color=~boro, type="bar", colors='viridis')
+```
+
+### Scatterplot
+
+```{r}
+rest_df%>%
+  mutate(text.label=str_c("Name: ", dba, "Grade: ", grade))%>%
+  plot_ly(x=~score, y=~cuisine_description, colors='viridis', 
+          text=~text.label, color=~boro, type="scatter", mode="markers")
+```
+

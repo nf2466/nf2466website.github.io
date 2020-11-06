@@ -24,4 +24,6 @@ I am an OBGYN living in NYC with my husband, Dan and dog, Sam (seen above). I am
 
 [SisterSong](https://www.sistersong.net/) <br>
 
-# Homework 4 Problem 2
+# Dashboard
+Graphics looking at NYC restaurant inspections by borough and restaurant type.
+[Link to dashboard](dashboard.html)
