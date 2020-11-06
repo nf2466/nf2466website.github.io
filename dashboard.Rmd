@@ -29,7 +29,7 @@ rest_df=
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Boxplot
+### Boxplot looking at score by borough
 
 ```{r}
 rest_df%>%
@@ -42,7 +42,7 @@ rest_df%>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Barplot
+### Barplot looking at count of restaurant grades by borough
 
 ```{r}
 rest_df%>%
@@ -51,7 +51,7 @@ rest_df%>%
   plot_ly(x=~grade,y=~n, color=~boro, type="bar", colors='viridis')
 ```
 
-### Scatterplot
+### Scatterplot looking at score by cuising type
 
 ```{r}
 rest_df%>%
